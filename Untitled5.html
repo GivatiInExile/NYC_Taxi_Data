@@ -12104,14 +12104,30 @@ dtype: int64</pre>
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">key</span><span class="o">=</span> <span class="s2">&quot;AIzaSyBqVWaFB6BJsTUIL6JoNpKRKxylYR15UOY&quot;</span>
+<span class="n">gmaps</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">key</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Generate interactive heatmap with adjustable time range for the dropoff hour.</span>
 <span class="c1">#NOTE: Gmaps doesn&#39;t have its own built in widgets. Ensure that that the selected</span>
 <span class="c1">#end_hour does NOT preceed the start_hour</span>
 
 <span class="c1">#insert google API key here</span>
 <span class="c1">#key= &quot;AIzaSyCqd9OV9_ilDi0T4JDXEwZ53go7LE5lBWE&quot;</span>
-<span class="n">key</span><span class="o">=</span> <span class="s2">&quot;AIzaSyBqVWaFB6BJsTUIL6JoNpKRKxylYR15UOY&quot;</span>
-<span class="n">gmaps</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">key</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">=</span><span class="n">gmaps</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">interact</span><span class="p">(</span><span class="n">time_range_heatmap</span><span class="p">,</span> <span class="n">start_hour</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
          <span class="n">end_hour</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">value</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
@@ -12264,10 +12280,10 @@ dtype: int64</pre>
 
 
 
-<div id="fd2aa40e-67fe-45a2-aba3-d0a5392dd34e"></div>
+<div id="72036d44-961a-43e0-8316-dfc4e930fd0f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#fd2aa40e-67fe-45a2-aba3-d0a5392dd34e');
+var element = $('#72036d44-961a-43e0-8316-dfc4e930fd0f');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13114,10 +13130,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="682fc920-4722-474f-b9dd-21e315f35509"></div>
+<div id="cbba051c-45ba-4fba-83b9-9522daaa9dfb"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#682fc920-4722-474f-b9dd-21e315f35509');
+var element = $('#cbba051c-45ba-4fba-83b9-9522daaa9dfb');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
