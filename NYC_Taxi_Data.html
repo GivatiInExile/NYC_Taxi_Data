@@ -11874,9 +11874,9 @@ Enabling notebook extension jupyter-gmaps/extension...
 <span class="kn">from</span> <span class="nn">pandas.io.json</span> <span class="k">import</span> <span class="n">json_normalize</span>
 <span class="kn">import</span> <span class="nn">gmplot</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="c1">#from ipywidgets import widgets</span>
-<span class="c1">#import ipywidgets as widgets</span>
-<span class="c1">#from ipywidgets import interact, interactive, fixed, interact_manual</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -12098,6 +12098,7 @@ dtype: int64</pre>
 <span class="n">gmaps</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">key</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">=</span><span class="n">gmaps</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">time_range_heatmap</span><span class="p">(</span><span class="n">taxi_df</span><span class="p">)</span>
+<span class="n">fig</span>
 <span class="c1">#interact(time_range_heatmap, start_hour=widgets.IntSlider(min=0,max=24,step=1),</span>
 <span class="c1">#         end_hour=widgets.IntSlider(min=0,max=24,step=1,value=1))</span>
 </pre></div>
@@ -12121,6 +12122,42 @@ dtype: int64</pre>
       Loading widgets...
     </button>
   </div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gmaps</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;0.8.4&#39;</pre>
+</div>
 
 </div>
 
@@ -12235,10 +12272,10 @@ dtype: int64</pre>
 
 
 
-<div id="824fd33e-cb41-4df6-a59e-b81b7617230d"></div>
+<div id="06326787-b640-4286-9a5e-b68cfc877bf7"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#824fd33e-cb41-4df6-a59e-b81b7617230d');
+var element = $('#06326787-b640-4286-9a5e-b68cfc877bf7');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
