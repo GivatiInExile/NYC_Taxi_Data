@@ -11864,7 +11864,8 @@ Enabling notebook extension jupyter-gmaps/extension...
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gmaps</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nbinteract</span> <span class="k">as</span> <span class="nn">nbi</span>
+<span class="kn">import</span> <span class="nn">gmaps</span>
 <span class="kn">import</span> <span class="nn">gmaps.datasets</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">math</span>
@@ -11936,27 +11937,10 @@ Enabling notebook extension jupyter-gmaps/extension...
     <span class="n">yellow_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">,</span> <span class="n">thresh</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">yellow_df</span><span class="p">)</span>
 
-<span class="n">taxi_df</span><span class="o">=</span><span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;yellow_tripdata_2016-01.csv&#39;</span><span class="p">)</span>
+<span class="n">taxi_df</span><span class="o">=</span><span class="n">get_data</span><span class="p">(</span><span class="s1">&#39;/Users/daniellandesman/downloads/pythondata/yellow_tripdata_2016-01.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>yellow_tripdata_2016-01.csv
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -11975,35 +11959,6 @@ Enabling notebook extension jupyter-gmaps/extension...
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>tpep_pickup_datetime     1919430
-tpep_dropoff_datetime    1919430
-trip_distance            1919430
-dropoff_longitude        1919430
-dropoff_latitude         1919430
-duration                 1919430
-dropoff_hour             1919430
-month                    1919430
-weekday                  1919430
-day                      1919430
-dtype: int64</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -12091,7 +12046,7 @@ dtype: int64</pre>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Generate interactive heatmap with adjustable time range for the dropoff hour.</span>
 <span class="c1">#NOTE: Gmaps doesn&#39;t have its own built in widgets. Ensure that that the selected</span>
 <span class="c1">#end_hour does NOT preceed the start_hour</span>
-
+<span class="kn">import</span> <span class="nn">gmaps</span>
 <span class="c1">#insert google API key here</span>
 <span class="n">key</span><span class="o">=</span> <span class="s2">&quot;AIzaSyBqVWaFB6BJsTUIL6JoNpKRKxylYR15UOY&quot;</span>
 <span class="n">gmaps</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">key</span><span class="p">)</span>
@@ -12234,10 +12189,10 @@ dtype: int64</pre>
 
 
 
-<div id="7b7158d1-d336-447c-9ba8-8319346c56ad"></div>
+<div id="4be63962-59c2-40ef-bc4b-88b86573403b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7b7158d1-d336-447c-9ba8-8319346c56ad');
+var element = $('#4be63962-59c2-40ef-bc4b-88b86573403b');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
